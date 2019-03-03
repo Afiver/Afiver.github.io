@@ -76,7 +76,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/02/python学习记录/">python学习记录</a>
+      <a class="article-title" href="/2019/03/02/python学习记录/">python</a>
     </h1>
   
 
@@ -84,15 +84,48 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Python学习笔记"><a href="#Python学习笔记" class="headerlink" title="Python学习笔记"></a>Python学习笔记</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">()</span></span></span><br><span class="line"><span class="function">  <span class="title">print</span>"<span class="title">Hello</span> <span class="title">world</span>"</span></span><br><span class="line"><span class="function"><span class="title">hello</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">福利控股第三类非公开；老地方开馆未了  </span><br><span class="line">说服力控股个是大法官是大法官水电费告  </span><br><span class="line">诉对方告诉对方公司的风格水电费公司法  </span><br><span class="line">定怪舒服东莞市东方告诉对方告个诉对方  </span><br><span class="line">告诉对方告诉对方</span><br></pre></td></tr></table></figure>
-<p><img src="python学习记录/213.jpg" alt="tu">  </p>
-<p><font size="5">阿斯利康打飞机拉科技</font></p>
+        <h1 id="Python学习笔记"><a href="#Python学习笔记" class="headerlink" title="Python学习笔记"></a>Python学习笔记</h1><p><code>`</code>python<br>第三章 课后习题<br>d#3-1 姓名： 将一些朋友的姓名存储在一个列表中，并将其命名为 names。依次访问</p>
+<p>#r该列表中的每个元素，从而将每个朋友的姓名都打印出来。</p>
+<p>names  = [‘sixUncle’,’huicong’,’chaoming’]</p>
+<p>for name in names:<br>    print(name)<br>  ‘’’<br>3-2 问候语： 继续使用练习 3-1 中的列表，但不打印每个朋友的姓名，而为每人打<br>印一条消息。每条消息都包含相同的问候语，但抬头为相应朋友的姓名。<br>‘’’</p>
+<p>names  = [‘sixUncle’,’huicong’,’chaoming’]</p>
+<p>for name in names:<br>    print(‘I am glad to make friends with you, ‘+name+ ‘!’)<br>  ‘’’<br>3-5 修改嘉宾名单：你刚得知有位嘉宾无法赴约，因此需要另外邀请一位嘉宾。<br> 以完成练习 3-4 时编写的程序为基础，在程序末尾添加一条 print 语句，指出哪<br>位嘉宾无法赴约。<br> 修改嘉宾名单，将无法赴约的嘉宾的姓名替换为新邀请的嘉宾的姓名。<br> 再次打印一系列消息，向名单中的每位嘉宾发出邀请。<br>‘’’</p>
+<p>persons = [‘mother’,’father’,’grandparents’,’sister’]</p>
+<p>print(‘I want to invite ‘,end =’’)<br>for person in persons:<br>    if person == persons[len(persons)-1]:<br>        print(person+’ ‘,end=’’)<br>    else:<br>        print(person+’, ‘,end=’’)</p>
+<p>print(‘to have dinner with me!’)<br>print(‘But to my disappointment, ‘+persons[2]+’ can not have fun with me.’)</p>
+<p>persons[2] = ‘cousins’</p>
+<p>print(‘I invite ‘,end =’’)<br>for person in persons:<br>    if person == persons[len(persons)-1]:<br>        print(person+’ ‘,end=’’)<br>    else:<br>        print(person+’, ‘,end=’’)</p>
+<p>print(‘to have dinner with me at last!’)<br>‘’’<br>3-6 添加嘉宾：你刚找到了一个更大的餐桌，可容纳更多的嘉宾。请想想你还想邀<br>请哪三位嘉宾。<br> 以完成练习 3-4 或练习 3-5 时编写的程序为基础，在程序末尾添加一条 print 语<br>句，指出你找到了一个更大的餐桌。<br> 使用 insert()将一位新嘉宾添加到名单开头。<br> 使用 insert()将另一位新嘉宾添加到名单中间。<br> 使用 append()将最后一位新嘉宾添加到名单末尾。<br> 打印一系列消息，向名单中的每位嘉宾发出邀请。<br>‘’’</p>
+<p>persons = [‘mother’,’father’,’grandparents’,’sister’]</p>
+<p>print(‘I want to invite ‘,end =’’)<br>for person in persons:<br>    if person == persons[len(persons)-1]:<br>        print(person+’ ‘,end=’’)<br>    else:<br>        print(person+’, ‘,end=’’)</p>
+<p>print(‘to have dinner with me!’)<br>print(‘But to my disappointment, ‘+persons[2]+’ can not have fun with me.’)</p>
+<p>persons[2] = ‘cousins’</p>
+<p>print(‘I invite ‘,end =’’)<br>for person in persons:<br>    if person == persons[len(persons)-1]:<br>        print(person+’ ‘,end=’’)<br>    else:<br>        print(person+’, ‘,end=’’)</p>
+<p>print(‘to have dinner with me instead!’)<br>print(‘I am happy to find a bigger desk now, so I can invite more persons!’)</p>
+<p>persons.insert(0,’sixUncle’)<br>persons.insert(2,’ahong’)<br>persons.append(‘liying’)</p>
+<p>print(‘I invite ‘,end =’’)<br>for person in persons:<br>    if person == persons[len(persons)-1]:<br>        print(person+’ ‘,end=’’)<br>    else:<br>        print(person+’, ‘,end=’’)</p>
+<p>print(‘to have dinner with me at last!’)<br>‘’’<br>3-7 缩减名单：你刚得知新购买的餐桌无法及时送达，因此只能邀请两位嘉宾。<br> 以完成练习 3-6 时编写的程序为基础，在程序末尾添加一行代码，打印一条你只<br>能邀请两位嘉宾共进晚餐的消息。<br> 使用 pop()不断地删除名单中的嘉宾，直到只有两位嘉宾为止。每次从名单中弹<br>出一位嘉宾时，都打印一条消息，让该嘉宾知悉你很抱歉，无法邀请他来共进<br>晚餐。<br> 对于余下的两位嘉宾中的每一位，都打印一条消息，指出他依然在受邀人之列。<br> 使用 del 将最后两位嘉宾从名单中删除，让名单变成空的。打印该名单，核实程<br>序结束时名单确实是空的。<br>‘’’</p>
+<p>persons = [‘mother’,’father’,’grandparents’,’sister’]</p>
+<p>print(‘I want to invite ‘,end =’’)<br>for person in persons:<br>    if person == persons[len(persons)-1]:<br>        print(person+’ ‘,end=’’)<br>    else:<br>        print(person+’, ‘,end=’’)</p>
+<p>print(‘to have dinner with me!’)<br>print(‘But to my disappointment, ‘+persons[2]+’ can not have fun with me.’)</p>
+<p>persons[2] = ‘cousins’</p>
+<p>print(‘I invite ‘,end =’’)<br>for person in persons:<br>    if person == persons[len(persons)-1]:<br>        print(person+’ ‘,end=’’)<br>    else:<br>        print(person+’, ‘,end=’’)</p>
+<p>print(‘to have dinner with me instead!’)<br>print(‘I am happy to find a bigger desk now, so I can invite more persons!’)</p>
+<p>persons.insert(0,’lily’)<br>persons.insert(2,’ahong’)<br>persons.append(‘liying’)</p>
+<p>print(‘I invite ‘,end =’’)<br>for person in persons:<br>    if person == persons[len(persons)-1]:<br>        print(person+’ ‘,end=’’)<br>    else:<br>        print(person+’, ‘,end=’’)</p>
+<p>print(‘to have dinner with me at last!’)<br>print(‘aha,how unlucky I am, my desk can not arrive in time, so I just must invite two persons’)</p>
+<p>while len(persons)&gt;2:<br>    print(persons.pop()+’, I am sorry for that I can not invite you to my desk’)</p>
+<p>for person in persons:<br>    print(person+’, you are still in my list, please come to my dinnner and have fun with me!’)</p>
+<p>del persons[0]<br>del persons[0]</p>
+<p>print(‘show list after del’)<br>print(persons)<br>‘’’<br>使用 len()打印一<br>条消息，指出你邀请了多少位嘉宾来与你共进晚餐。<br>‘’’</p>
+<p>persons = [‘mother’,’father’,’grandparents’,’sister’]</p>
+<p>print(‘I want to invite ‘,end =’’)<br>for person in persons:<br>    if person == persons[len(persons)-1]:<br>        print(person+’ ‘,end=’’)<br>    else:<br>        print(person+’, ‘,end=’’)<br>print(‘to have dinner with me!’)</p>
+<p>print(‘So I invite ‘+str(len(persons))+’ persons at last!’)</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/02/python学习记录/" data-id="cjsroq1nn0000k0v9tbkdce2j" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/02/python学习记录/" data-id="cjssbzqkq0000sgv9wg0ff40r" class="article-share-link">Share</a>
       
       
     </footer>
@@ -132,7 +165,7 @@
       <ul>
         
           <li>
-            <a href="/2019/03/02/python学习记录/">python学习记录</a>
+            <a href="/2019/03/02/python学习记录/">python</a>
           </li>
         
       </ul>
